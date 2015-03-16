@@ -15,7 +15,7 @@ public class GoogleTest {
 		String url = "http://www.google.com/search?q=httpClient";
 		String response = HttpClientUtil.get(url);
 		System.out.println("response = " + response);
-		if(response != null && response.contains("Search222")){
+		if(response != null && response.contains("Search")){
 			//do nothing
 		}else{
 			Assert.fail("response doesn't contain Search");
